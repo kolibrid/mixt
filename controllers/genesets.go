@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/fjukstad/kvik/gsea"
+	"github.com/kolibrid/kvik/gsea"
 	"github.com/gorilla/mux"
 
-	"github.com/fjukstad/mixt/mixt"
+	"github.com/kolibrid/mixt/mixt"
 )
 
 type GeneSet struct {

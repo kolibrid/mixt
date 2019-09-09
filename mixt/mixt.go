@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fjukstad/kvik/r"
+	"github.com/kolibrid/kvik/r"
 	"github.com/pkg/errors"
 )
 

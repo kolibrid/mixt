@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/fjukstad/mixt/mixt"
+	"github.com/kolibrid/mixt/mixt"
 	"github.com/gorilla/mux"
 )
 
