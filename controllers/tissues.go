@@ -8,7 +8,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/fjukstad/mixt/mixt"
+	"github.com/kolibrid/mixt/mixt"
 )
 
 type Tissues struct {

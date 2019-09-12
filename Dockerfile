@@ -1,4 +1,4 @@
-from golang:1.7
+FROM golang:1.12.9
 
 RUN go get github.com/PuerkitoBio/goquery    \
     github.com/andybalholm/cascadia \
@@ -9,10 +9,10 @@ RUN go get github.com/PuerkitoBio/goquery    \
     golang.org/x/net/html \
     golang.org/x/net/html/atom 
 
-RUN go get -d github.com/fjukstad/kvik/...
+RUN go get -d github.com/kolibrid/kvik/...
 
-ADD . $GOPATH/src/github.com/fjukstad/mixt/
-WORKDIR $GOPATH/src/github.com/fjukstad/mixt/
+ADD . $GOPATH/src/github.com/kolibrid/mixt/
+WORKDIR $GOPATH/src/github.com/kolibrid/mixt/
 RUN go install 
 
 ENV PORT :80

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"text/template"
 
-	"github.com/fjukstad/mixt/mixt"
+	"github.com/kolibrid/mixt/mixt"
 	"github.com/gorilla/mux"
 )
 

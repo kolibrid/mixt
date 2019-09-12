@@ -18,7 +18,7 @@ The application runs at
 MIxT consist of two main components: the web application and the
 compute backend. The compute backend provides data and analyses, and the web
 application allows users to view and explore the results. We use the *r* package
-in [Kvik](http://github.com/fjukstad/kvik) to run the compute backend. 
+in [Kvik](http://github.com/kolibrid/kvik) to run the compute backend. 
 
 # Install and run 
 There are two options for installing and running the MIxT web
@@ -26,8 +26,8 @@ application, either compile and run on your machine, or use the Docker Image.
 
 ## Compile and run 
 - First install [go](http://golang.org)
-- `$ go get github.com/fjukstad/mixt`
-- `$ cd $GOPATH/src/github.com/fjukstad/mixt`
+- `$ go get github.com/kolibrid/mixt`
+- `$ cd $GOPATH/src/github.com/kolibrid/mixt`
 - `$ mixt `
 - Open [localhost:8004](localhost:8004) 
 
@@ -40,13 +40,13 @@ components separately or together using
 First start the compute-service 
 
 ```
-$ docker run --name=compute -t fjukstad/mixt-compute-service 
+$ docker run --name=compute -t mafermedia/mixt-compute-service 
 ```
 
 then the web application 
 
 ```
-$ docker run -p 8000:80 --link compute -e COMPUTE_SERVICE=compute:80 --name=mixt -t fjukstad/mixt-stroma 
+$ docker run -p 8000:80 --link compute -e COMPUTE_SERVICE=compute:80 --name=mixt -t mafermedia/mixt-stroma 
 ```
 
 which is now running on [localhost:8000](http://localhost:8000).
@@ -57,7 +57,7 @@ which is now running on [localhost:8000](http://localhost:8000).
 Run 
 
 ```
-$ git clone github.com/fjukstad/mixt
+$ git clone github.com/kolibrid/mixt
 $ cd mixt
 $ docker-compose up
 ```

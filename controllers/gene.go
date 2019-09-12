@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/fjukstad/kvik/genecards"
-	"github.com/fjukstad/mixt/mixt"
+	"github.com/kolibrid/kvik/genecards"
+	"github.com/kolibrid/mixt/mixt"
 	"github.com/gorilla/mux"
 )
 

@@ -1,7 +1,7 @@
 version: "2"
 services: 
   web: 
-    image: fjukstad/mixt-stroma
+    image: mafermedia/mixt-stroma
     ports: 
       - "8000:80"
     links: 
@@ -9,4 +9,4 @@ services:
     environment: 
       - COMPUTE_SERVICE=compute:80
   compute: 
-    image: "fjukstad/mixt-compute-service"
+    image: "mafermedia/mixt-compute-service"
