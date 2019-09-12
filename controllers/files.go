@@ -3,8 +3,8 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/fjukstad/mixt/mixt"
 	"github.com/gorilla/mux"
+	"github.com/kolibrid/mixt/mixt"
 )
 
 func FileHandler(w http.ResponseWriter, r *http.Request) {
